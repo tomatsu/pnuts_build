@@ -3,7 +3,7 @@ The build script to build pnuts and the script to generate docker image
 
 ```
 % docker pull tomatsu3/pnuts_build
-% git clone https://github.com/tomatsu/pnuts
+% git clone https://github.com/tomatsu/pnuts.git
 % cd pnuts
 % ../ant
 % out/pnuts-1.2.1/bin/pnuts.sh
