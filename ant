@@ -1,0 +1,10 @@
+#!/bin/bash
+
+i=$(whoami)
+uid=$(id -u ${i})
+gid=$(id -g ${i})
+
+DOCKER_REPOSITORY=tomatsu3/pnuts_build
+
+docker run -it --rm -u ${uid}:${gid} -v $(pwd):/home/developer ${DOCKER_REPOSITORY} /bin/sh -c "cd /home/developer; ant $*"
+
